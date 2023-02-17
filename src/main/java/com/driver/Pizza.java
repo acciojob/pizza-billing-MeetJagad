@@ -46,7 +46,7 @@ public class Pizza {
         // your code goes here
         if(!isExtraToppingAdded) {
             this.price += this.toppings;
-            this.isExtraToppingAdded = true;
+            isExtraToppingAdded = true;
         }
     }
 
@@ -71,6 +71,7 @@ public class Pizza {
                 this.bill += "Paperbag Added: 20" + "\n";
             }
             this.bill += "Total Price: " + this.price;
+            this.isBillCreated=true;
             return this.bill;
         }
         return "";
